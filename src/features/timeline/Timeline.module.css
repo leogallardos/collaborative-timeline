@@ -1,0 +1,128 @@
+.timelineStart {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  background-color: #121212;
+  color: white;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  width: 2px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-1px);
+}
+
+.timelineEntry {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.timelineCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid;
+  z-index: 1;
+}
+
+.timelineCircle img {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.messageBox {
+  background: linear-gradient(135deg, #282828, #1e1e1e);
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-grow: 1;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.metadata {
+  color: #bbb;
+  font-size: 0.9em;
+  display: flex;
+  flex-grow: 1;
+  gap: 12px;
+  align-items: center;
+}
+
+.messageBox:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.entryLeft .messageBox:before {
+  left: -10px;
+  border-color: transparent #282828 transparent transparent;
+  border-width: 10px 10px 10px 0;
+}
+
+.entryRight .messageBox:before {
+  right: -10px;
+  border-color: transparent transparent transparent #282828;
+  border-width: 10px 0 10px 10px;
+}
+
+.messageText {
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 1.5em;
+}
+.entryLeft .metadata .metadataText {
+  text-align: right;
+}
+
+.entryRight .metadata .metadataText {
+  text-align: left;
+}
+.entryLeft .metadata {
+  flex-direction: row-reverse;
+}
+
+.entryRight .metadata {
+  order: 3;
+}
+
+.entryLeft .timelineCircle {
+  order: 2;
+}
+
+.entryLeft .messageBox {
+  order: 3;
+}
+
+.entryRight .timelineCircle {
+  order: 2;
+}
+
+.entryRight .messageBox {
+  order: 1;
+}
