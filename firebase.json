@@ -1,0 +1,32 @@
+{
+  "hosting": [
+    {
+      "target": "app",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "timeline-data",
+      "public": "public" , 
+      "headers": [
+        {
+          "source": "/timeline.json",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            } 
+          ]
+        }
+      ]
+    }
+  ]
+}

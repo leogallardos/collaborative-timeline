@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .circle {
+      fill: none;
+      stroke: #4169E1; /* Example color: RoyalBlue */
+      stroke-width: 6;
+    }
+    .line {
+      stroke: #4169E1;
+      stroke-width: 4;
+      stroke-linecap: round;
+    }
+  </style>
+  <circle class="circle" cx="25" cy="50" r="12" />
+  <circle class="circle" cx="75" cy="50" r="12" />
+  <line class="line" x1="37" y1="50" x2="63" y2="50" />
+</svg>

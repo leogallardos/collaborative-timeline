@@ -26,7 +26,7 @@ interface TimelineData {
 }
 
 export const timelineApiSlice = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: "/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://collaborative-timeline-data.web.app" }),
   reducerPath: "timelineApi",
   tagTypes: ["Timeline"],
   endpoints: build => ({

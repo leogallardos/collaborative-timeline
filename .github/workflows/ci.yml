@@ -1,0 +1,22 @@
+name: Check Timeline Data on PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+      - name: Generate Timeline Data
+        run: node scripts/generate-timeline-data.js

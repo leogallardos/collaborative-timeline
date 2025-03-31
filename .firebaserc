@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "flisol-ittoluca"
+  },
+  "targets": {
+    "flisol-ittoluca": {
+      "hosting": { 
+        "app": [
+        "collaborative-timeline"
+      ],
+        "timeline-data": [
+          "collaborative-timeline-data"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
