@@ -1,2 +1,2 @@
-**Fun Fact:** <Fun Fact>
-**Emoji:** <Favorite Emoji>
+**Fun Fact:** <SI VES QUE ESTOY CON LA CABEZA GACHA SOLO ESTOY VIEDNO MIS ZAPATOS>
+**Emoji:** <🔄>
